@@ -31,6 +31,7 @@ services:
     build: webapp/
     environment:
       - MODE=local
+      # here update the public ip address of the application layer/server
       - API_URL=http://api-server:8080
     ports:
       - "3000:80"
